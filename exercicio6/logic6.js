@@ -1,25 +1,17 @@
 //Arrays: Escreva um programa que declare um array de suas frutas favoritas e imprima cada fruta na lista usando um loop.
 
-//const myFavorite = ['Uva', 'Banana', 'Manga', 'abacate']
+const favoriteFruits = []
 
-//for (let i = 0; i < myFavorite.length; i++){
-    //console.log(myFavorite[i])
-//}
-
-const frutasFavoritas = [];
-
-while (true) {
-    const fruta = prompt("Digite uma fruta favorita ou pressione Cancelar para sair:");
-
-    if (fruta === null || fruta === "") {
-        break;
+while(true){
+    const fruit = prompt("Enter your favorite fruit: ")
+    if(fruit === null || fruit === " "){
+        break
     }
-
-    frutasFavoritas.push(fruta);
+    favoriteFruits.push(fruit)
 }
 
-if (frutasFavoritas.length > 0) {
-    alert("Suas frutas favoritas são:\n" + frutasFavoritas.join(", "));
-} else {
-    alert("Você não inseriu nenhuma fruta favorita.");
+if(favoriteFruits.length > 0){
+    alert("Your favorite fruit are: " + favoriteFruits.join(", "))
+}else{
+    alert("You don't have any fruit, you don't have any fruit")
 }
