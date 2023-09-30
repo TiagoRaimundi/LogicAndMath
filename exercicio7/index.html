@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //Questão:
+            //João deseja comprar um novo smartphone. Ele tem algumas condições:
+            //Ele quer um smartphone da marca Apple OU Samsung.
+            //Ele só comprará se o preço estiver entre $500 e $1000.
+            //Se for da Apple, ele quer que tenha pelo menos 128GB de armazenamento. Se for da Samsung, ele quer uma câmera de pelo menos 48 megapixels.
+            //João só comprará se o smartphone estiver disponível em sua loja local.
+
+            const smartphone = {
+                marca: "Apple",
+                preco: 900,
+                memoria: 254,
+                disponivel: true
+            }
+
+            function joaoBuy(compra){
+                return(
+                    (compra.marca === "Apple" || 'Samsung') && (compra.preco >= 500 && compra.preco <= 1000) 
+                )
+
+            }
+            console.log(joaoBuy(smartphone))
+    </script>
+</body>
+</html>
