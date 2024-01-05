@@ -1,14 +1,15 @@
-function encontrarMaiorNumero(array){
+function EncontrarMaiorNumero(array){
     let maior = array[0]
     for (let i = 1; i < array.length; i++){
         if (array[i] > maior){
-            maior = array[i]
-        
+             maior = array[i]
         }
+
     }
     return maior
+
 }
 
-const numeros = [1, 2, 5, 8, 9, 1, 3]
-resultado = encontrarMaiorNumero(numeros)
-console.log(resultado)
+const numbers = [ 1, 2, 5, 4]
+const result =  EncontrarMaiorNumero(numbers)
+console.log(result)
