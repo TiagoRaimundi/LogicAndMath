@@ -1,14 +1,13 @@
-function EncontrarMaiorNumero(array){
+function maiorNumero(array){
     let maior = array[0]
-    for(let i = 1; i < array.length; i ++){
-        if(array[i] > maior){
+    for (i = 1; i < array.length; i++){
+        if(maior < array[i]){
             maior = array[i]
         }
-
-    } 
+    }
     return maior
 }
 
-const num = [1, 5, 7, 4 , 4552, 10, 54, 9, 71,]
-const result= EncontrarMaiorNumero(num)
+const number = [ 1, 56, 8]
+const result =  maiorNumero(number)
 console.log(result)
