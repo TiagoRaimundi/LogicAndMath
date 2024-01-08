@@ -1,6 +1,6 @@
 const readline = require('readline').createInterface({
     input: process.stdin,
-    output: process.stdout,
+    output: process.stdout
 })
 
 const escolhas = ['pedra', 'papel', 'tesoura']
