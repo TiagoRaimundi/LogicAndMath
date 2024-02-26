@@ -1,18 +1,45 @@
-function isAnagram(s, t) {
-    // Verifica se as strings têm o mesmo comprimento
-    if (s.length !== t.length) {
-        return false;
+/**
+ * 242. Valid Anagram
+Easy
+Topics
+Companies
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+ 
+
+Example 1:
+
+Input: s = "anagram", t = "nagaram"
+Output: true
+Example 2:
+
+Input: s = "rat", t = "car"
+Output: false
+ 
+
+Constraints:
+
+1 <= s.length, t.length <= 5 * 104
+s and t consist of lowercase English letters.
+ 
+
+Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
+ */
+
+function isAnagram(){
+    if(s.length !== t.length){
+        return false 
     }
+    const wordS = s.split('').sort().join('')  
+    const wordT = t.split('').sort().join('')
     
-    // Ordena os caracteres nas strings e as compara
-    const sortedS = s.split('').sort().join('');
-    const sortedT = t.split('').sort().join('');
-    
-    return sortedS === sortedT;
+    return wordS == wordT
+
 }
 
-const s = "anagram";
-const t = "nagaram";
+const s = "anagram"
+const t = "nagrama"
 
-console.log(isAnagram(s, t)); 
-                              
+console.log(isAnagram(s, t))
